@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Booking Agency Website</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+body{
+line-height:1.6;
+color:#333;
+}
+header{
+background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+height:90vh;
+color:white;
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.5);
+}
+nav h1{
+font-size:28px;
+}
+nav ul{
+list-style:none;
+display:flex;
+}
+nav ul li{
+margin-left:20px;
+}
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+nav ul li a:hover{
+color:#ff9800;
+}
+.hero{
+height:80%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.hero h2{
+font-size:48px;
+margin-bottom:15px;
+}
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+.btn{
+padding:12px 25px;
+background:#ff9800;
+color:white;
+text-decoration:none;
+border-radius:5px;
+border:none;
+cursor:pointer;
+}
+section{
+padding:60px;
+}
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+.destinations,
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+.card{
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+background:white;
+}
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+.card-content{
+padding:20px;
+}
+.about{
+background:#f4f4f4;
+text-align:center;
+}
+.contact form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+.contact input,
+.contact textarea{
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+}
+@media(max-width:768px){
+nav{
+flex-direction:column;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<h1>Travel Booking Agency Website </h1>
+<ul>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="hero">
+<div>
+<h2>Explore the World With Us</h2>
+<p>Your dream vacation starts here</p>
+<a href="#contact" class="btn">Book Now</a>
+</div>
+</div>
+</header>
+<section id="destinations">
+<h2 class="section-title">Popular Destinations</h2>
+<div class="destinations">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="">
+<div class="card-content">
+<h3>Paris</h3>
+<p>The city of love and lights.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="">
+<div class="card-content">
+<h3>Maldives</h3>
+<p>Crystal clear waters and luxury resorts.</p>
+</div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+<div class="card-content">
+<h3>New York</h3>
+<p>The city that never sleeps.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="card">
+<div class="card-content">
+<h3>Flight Booking</h3>
+<p>Best deals on domestic and international flights.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-content">
+<h3>Hotel Reservations</h3>
+<p>Comfortable stays at affordable prices.</p>
+</div>
+</div>
+<div class="card">
+<div class="card-content">
+<h3>Tour Packages</h3>
+<p>Customized tours tailored to your needs.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="about">
+<h2 class="section-title">About Us</h2>
+<p>
+Travel booking agency website is a trusted travel agency helping travelers explore the world
+with unforgettable experiences. We specialize in personalized travel plans,
+ensuring comfort, safety, and joy.
+</p>
+</section>
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+<form>
+<input type="text" placeholder="Your Name" required
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</section>
+<footer>
+<p>© 2026 TRAVEL BOOKING AGENCY WEBSITE. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
